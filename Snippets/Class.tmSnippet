@@ -10,14 +10,13 @@
         <string>class</string>
         <key>content</key>
         <string>Class ${1:ClassName}
-
-    ${2:Private Sub Class_Initialize
-        $3    
+    ${2:${3:Private Sub Class_Initialize
+        $4
     End Sub}
 
-    ${3:Private Sub Class_Terminate
-        $4    
-    End Sub}
+    ${5:Private Sub Class_Terminate
+        $6    
+    End Sub}}    
 End Class
 </string>
         <key>scope</key>
