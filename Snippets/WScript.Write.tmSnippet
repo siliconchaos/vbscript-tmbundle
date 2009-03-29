@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>name</key>
+        <string>WScript.Write</string>
+        <key>uuid</key>
+        <string>1F1B94F0-A001-41F6-B92F-D134F844ABDE</string>
+        <key>tabTrigger</key>
+        <string>w</string>
+        <key>content</key>
+        <string>WScript.StdOut.Write $0</string>
+        <key>scope</key>
+        <string>source.vbs</string>
+    </dict>
+</plist>
