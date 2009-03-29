@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>name</key>
+        <string>Do-Loop-test</string>
+        <key>uuid</key>
+        <string>135E55EC-3822-4B64-8638-3BC222AD8C62</string>
+        <key>tabTrigger</key>
+        <string>loop</string>
+        <key>content</key>
+        <string>Do
+    $0
+Loop ${1:While}${2:Until} ${3:condition}</string>
+        <key>scope</key>
+        <string>source.vbs</string>
+    </dict>
+</plist>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>name</key>
+        <string>Create Scripting.FileSystemObject</string>
+        <key>uuid</key>
+        <string>F3C2B69D-279B-483A-8412-A770EF98C070</string>
+        <key>tabTrigger</key>
+        <string>fso</string>
+        <key>content</key>
+        <string>Dim ${1:fso}
+Set $1 = CreateObject("Scripting.FileSystemObject")
+$0</string>
+        <key>scope</key>
+        <string>source.vbs</string>
+    </dict>
+</plist>
