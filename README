@@ -1,3 +1,4 @@
-An e bundle for VBScript.
+An e bundle for VBScript in the context of .vbs & .wsf command-line scripts.
 
-Based on the (classic) ASP bundle.
+For VBScript in the context of ASP pages, use the ASP bundle instead (which this
+bundle is based on.)
