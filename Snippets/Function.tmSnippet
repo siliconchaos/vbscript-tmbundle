@@ -3,13 +3,18 @@
 <plist version="1.0">
     <dict>
         <key>name</key>
-        <string>dim</string>
+        <string>Function</string>
         <key>uuid</key>
-        <string>D8628EE8-AF43-4DF4-96E8-CF1E78FE5993</string>
+        <string>18D8483C-A51D-4E23-B555-F40F6107E69C</string>
         <key>tabTrigger</key>
-        <string>dims</string>
+        <string>fun</string>
         <key>content</key>
-        <string>dim $1 : set $1 = new $2</string>
+        <string>${1:public }function $2
+    $0
+    
+    $2 = 'Set a return value
+end function
+</string>
         <key>scope</key>
         <string>source.vbs</string>
     </dict>
