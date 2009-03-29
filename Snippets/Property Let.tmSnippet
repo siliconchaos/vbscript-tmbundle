@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>name</key>
+        <string>Property Let</string>
+        <key>uuid</key>
+        <string>1C12352C-A4B7-4073-BC0B-FE92B848BDBE</string>
+        <key>tabTrigger</key>
+        <string>let</string>
+        <key>content</key>
+        <string>${1:Private }Property Let ${2:Name}(${3:value})
+    $0
+End Property</string>
+        <key>scope</key>
+        <string>source.vbs</string>
+    </dict>
+</plist>
