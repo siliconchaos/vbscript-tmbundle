@@ -9,10 +9,10 @@
         <key>tabTrigger</key>
         <string>fun</string>
         <key>content</key>
-        <string>${1:public }function $2
+        <string>function $1
     $0
     
-    $2 = 'Set a return value
+    $1 = 'Set a return value
 end function
 </string>
         <key>scope</key>

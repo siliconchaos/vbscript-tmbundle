@@ -9,7 +9,7 @@
         <key>tabTrigger</key>
         <string>sub</string>
         <key>content</key>
-        <string>${1:public }sub $2
+        <string>sub $1
     $0
 end sub
 </string>
