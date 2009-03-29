@@ -43,26 +43,21 @@
             <dict>
                 <key>captures</key>
                 <dict>
-                    <key>3</key>
+                    <key>2</key>
                     <dict>
                         <key>name</key>
                         <string>entity.name.type.vbs</string>
                     </dict>
-                    <key>2</key>
-                    <dict>
-                        <key>name</key>
-                        <string>storage.type.class.vbs</string>
-                    </dict>
                     <key>1</key>
                     <dict>
                         <key>name</key>
-                        <string>storage.modifier.vbs</string>
+                        <string>storage.type.class.vbs</string>
                     </dict>
                 </dict>
                 <key>name</key>
                 <string>meta.class.vbs</string>
                 <key>match</key>
-                <string>(?i:^\s*(public|private)?\s*(class)\s*([a-zA-Z_]\w*)\s*\n?)</string>
+                <string>(?i:^\s*(class)\s*([a-zA-Z_]\w*)\s*\n?)</string>
             </dict>
             <dict>
                 <key>captures</key>
