@@ -43,6 +43,30 @@
             <dict>
                 <key>captures</key>
                 <dict>
+                    <key>3</key>
+                    <dict>
+                        <key>name</key>
+                        <string>entity.name.type.vbs</string>
+                    </dict>
+                    <key>2</key>
+                    <dict>
+                        <key>name</key>
+                        <string>storage.type.class.vbs</string>
+                    </dict>
+                    <key>1</key>
+                    <dict>
+                        <key>name</key>
+                        <string>storage.modifier.vbs</string>
+                    </dict>
+                </dict>
+                <key>name</key>
+                <string>meta.class.vbs</string>
+                <key>match</key>
+                <string>(?i:^\s*(public|private)?\s*(class)\s*([a-zA-Z_]\w*)\s*\n?)</string>
+            </dict>
+            <dict>
+                <key>captures</key>
+                <dict>
                     <key>1</key>
                     <dict>
                         <key>name</key>
@@ -137,19 +161,13 @@
                     <key>1</key>
                     <dict>
                         <key>name</key>
-                        <string>punctuation.definition.variable.asp</string>
+                        <string>punctuation.definition.variable.vbs</string>
                     </dict>
                 </dict>
                 <key>name</key>
                 <string>variable.other.vbs</string>
                 <key>match</key>
                 <string>(\$)[a-zA-Z_x7f-xff][a-zA-Z0-9_x7f-xff]*?\b</string>
-            </dict>
-            <dict>
-                <key>name</key>
-                <string>support.class.collection.vbs</string>
-                <key>match</key>
-                <string>(?i:\b(Contents|StaticObjects|ClientCertificate|Cookies|Form|QueryString|ServerVariables)\b)</string>
             </dict>
             <dict>
                 <key>name</key>
@@ -161,7 +179,7 @@
                 <key>name</key>
                 <string>support.function.event.vbs</string>
                 <key>match</key>
-                <string>(?i:\b(Application_OnEnd|Application_OnStart|OnTransactionAbort|OnTransactionCommit|Session_OnEnd|Session_OnStart|Class_Initialize|Class_Terminate)\b)</string>
+                <string>\b(?i:Class_(Initialize|Terminate))\b</string>
             </dict>
             <dict>
                 <key>name</key>
@@ -185,7 +203,7 @@
                 <key>name</key>
                 <string>support.type.vbs</string>
                 <key>match</key>
-                <string>(?i:\b(vbtrue|fvbalse|vbcr|vbcrlf|vbformfeed|vblf|vbnewline|vbnullchar|vbnullstring|vbtab|vbverticaltab|vbbinarycompare|vbtextcomparevbsunday|vbmonday|vbtuesday|vbwednesday|vbthursday|vbfriday|vbsaturday|vbusesystemdayofweek|vbfirstjan1|vbfirstfourdays|vbfirstfullweek|vbgeneraldate|vblongdate|vbshortdate|vblongtime|vbshorttime|vbobjecterror|vbEmpty|vbNull|vbInteger|vbLong|vbSingle|vbDouble|vbCurrency|vbDate|vbString|vbObject|vbError|vbBoolean|vbVariant|vbDataObject|vbDecimal|vbByte|vbArray)\b)</string>
+                <string>(?i:\b(vb(true|false|cr|crlf|formfeed|lf|newline|nullchar|nullstring|tab|verticaltab|binarycompare|textcompare|sunday|monday|tuesday|wednesday|thursday|friday|saturday|usesystemdayofweek|firstjan1|firstfourdays|firstfullweek|generaldate|longdate|shortdate|longtime|shorttime|objecterror|Empty|Null|Integer|Long|Single|Double|Currency|Date|String|Object|Error|Boolean|Variant|DataObject|Decimal|Byte|Array))\b)</string>
             </dict>
         </array>
         <key>name</key>
