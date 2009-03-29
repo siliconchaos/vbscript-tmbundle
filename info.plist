@@ -6,5 +6,18 @@
         <string>VBScript</string>
         <key>uuid</key>
         <string>A63442E5-3576-4F60-A32E-D6E1486EB364</string>
+        <key>mainMenu</key>
+        <dict>
+            <key>items</key>
+            <array>
+                <string>67D20ED0-9CD0-4237-BECC-86B74D6CE3DC</string>
+                <string>------------------------------------</string>
+                <string>6E9D52B7-B392-45ED-BB39-AC48E1C99129</string>
+                <string>479158E8-679E-401E-AD28-B80D9B9DF757</string>
+                <string>6D7F710B-1250-4CCE-A9D1-DF96D82AA89D</string>
+                <string>38799670-9947-4C3F-8921-AAF73CBCA871</string>
+                <string>8A556333-C977-48C7-84C1-9B8D933DE64C</string>
+            </array>
+        </dict>
     </dict>
 </plist>

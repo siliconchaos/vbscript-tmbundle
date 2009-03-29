@@ -9,7 +9,8 @@
         <key>content</key>
         <string>Select Case ${1:variable}
     Case $2
-    ${3:Case Else
+
+${3:    Case Else
         $4}
 End Select
 </string>
