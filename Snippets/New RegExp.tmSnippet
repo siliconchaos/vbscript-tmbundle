@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>name</key>
+        <string>New RegExp</string>
+        <key>uuid</key>
+        <string>CBA18E2B-06B6-41B7-AB51-11A8372D4713</string>
+        <key>tabTrigger</key>
+        <string>re</string>
+        <key>content</key>
+        <string>Dim ${1:re} : Set $1 = new RegExp
+${2:$1.IgnoreCase = True
+}${3:$1.Global = True
+}$1.Pattern = ${4:"\b(pattern\|to\|match)\b"}</string>
+        <key>scope</key>
+        <string>source.vbs</string>
+    </dict>
+</plist>
