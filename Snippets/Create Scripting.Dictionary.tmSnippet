@@ -1,18 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-    <dict>
-        <key>name</key>
-        <string>Create Scripting.Dictionary</string>
-        <key>uuid</key>
-        <string>A345F8DD-F564-4F5B-B783-C796A9B5640B</string>
-        <key>tabTrigger</key>
-        <string>dict</string>
-        <key>content</key>
-        <string>Dim ${1:d}
-Set $1 = CreateObject("Scripting.Dictionary")
+<dict>
+	<key>content</key>
+	<string>dim ${1:d}
+set $1 = CreateObject("Scripting.Dictionary")
 $0</string>
-        <key>scope</key>
-        <string>source.vbs</string>
-    </dict>
+	<key>name</key>
+	<string>Create Scripting.Dictionary</string>
+	<key>scope</key>
+	<string>source.vbs</string>
+	<key>tabTrigger</key>
+	<string>dict</string>
+	<key>uuid</key>
+	<string>A345F8DD-F564-4F5B-B783-C796A9B5640B</string>
+</dict>
 </plist>

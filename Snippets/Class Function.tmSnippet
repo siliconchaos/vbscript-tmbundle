@@ -3,19 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>Function $1
+	<string>${1:Private }Function $2
     $0
     
-    $1 = 'Set a return value
+    $2 = 'Set a return value
 End Function
 </string>
 	<key>name</key>
-	<string>Function</string>
+	<string>Class Function</string>
 	<key>scope</key>
-	<string>source.vbs</string>
+	<string>source.vbs meta.class.vbs</string>
 	<key>tabTrigger</key>
 	<string>fun</string>
 	<key>uuid</key>
-	<string>18D8483C-A51D-4E23-B555-F40F6107E69C</string>
+	<string>BC8C6A53-45FB-4533-864C-AC5450AD55A6</string>
 </dict>
 </plist>
