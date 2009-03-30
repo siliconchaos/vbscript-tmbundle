@@ -17,7 +17,9 @@
 	<key>patterns</key>
 	<array>
 		<dict>
-			<key>captures</key>
+			<key>begin</key>
+			<string>(?i:^\s*(function|sub)\s*([a-zA-Z_]\w*)\s*(\()([^)]*)(\)))</string>
+			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
 				<dict>
@@ -45,14 +47,29 @@
 					<string>punctuation.definition.parameters.vbs</string>
 				</dict>
 			</dict>
-			<key>match</key>
-			<string>(?i:^\s*(function|sub)\s*([a-zA-Z_]\w*)\s*(\()([^)]*)(\)).*\n?)</string>
-			<key>name</key>
+			<key>contentName</key>
 			<string>meta.function.vbs</string>
+			<key>end</key>
+			<string>(?:^\s*(end\s+\1))</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>storage.type.function.vbs</string>
+				</dict>
+			</dict>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>$self</string>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>(?i:^\s*(class)\s*([a-zA-Z_]\w*)\s*\n?)</string>
+			<string>(?i:^\s*(class)\s*([a-zA-Z_]\w*))</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
