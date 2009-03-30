@@ -1,18 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-    <dict>
-        <key>name</key>
-        <string>Property Set</string>
-        <key>uuid</key>
-        <string>A639EDD9-86D2-400C-A4A0-FC641D8FDB3A</string>
-        <key>content</key>
-        <string>${1:Private }Property Set ${2:Name}(${3:oValue})
+<dict>
+	<key>content</key>
+	<string>${1:Private }Property Set ${2:Name}(${3:oValue})
     $0
 End Property</string>
-        <key>scope</key>
-        <string>source.vbs</string>
-        <key>tabTrigger</key>
-        <string>set</string>
-    </dict>
+	<key>name</key>
+	<string>Property Set</string>
+	<key>scope</key>
+	<string>source.vbs meta.class.vbs</string>
+	<key>tabTrigger</key>
+	<string>set</string>
+	<key>uuid</key>
+	<string>A639EDD9-86D2-400C-A4A0-FC641D8FDB3A</string>
+</dict>
 </plist>
