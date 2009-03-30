@@ -18,7 +18,7 @@
 	<array>
 		<dict>
 			<key>begin</key>
-			<string>(?i:^\s*(function|sub)\s*([a-zA-Z_]\w*)\s*(\()([^)]*)(\)))</string>
+			<string>(?i)^\s*(function|sub)\s*([a-zA-Z_]\w*)\s*(\()([^)]*)(\))</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
@@ -50,7 +50,7 @@
 			<key>contentName</key>
 			<string>meta.function.vbs</string>
 			<key>end</key>
-			<string>(?:^\s*end\s+\1)</string>
+			<string>(?i)^\s*end\s+\1</string>
 			<key>endCaptures</key>
 			<dict>
 				<key>0</key>
@@ -69,7 +69,7 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>(?i:^\s*(class)\s*([a-zA-Z_]\w*))</string>
+			<string>(?i)^\s*(class)\s*([a-zA-Z_]\w*)</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
@@ -86,7 +86,7 @@
 			<key>contentName</key>
 			<string>meta.class.vbs</string>
 			<key>end</key>
-			<string>(?i:^\s*end\s+class)</string>
+			<string>(?i)^\s*end\s+class</string>
 			<key>endCaptures</key>
 			<dict>
 				<key>0</key>
@@ -133,7 +133,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?i:\b(If|Then|Else|ElseIf|End If|While|Wend|For|To|Each|In|Step|Case|Select|End Select|Return|Continue|Do|Until|Loop|Next|With|Exit Do|Exit For|Exit Function|Exit Property|Exit Sub)\b)</string>
+			<string>(?i)\b(If|Then|Else|ElseIf|End If|While|Wend|For|To|Each|In|Step|Case|Select|End Select|Return|Continue|Do|Until|Loop|Next|With|Exit Do|Exit For|Exit Function|Exit Property|Exit Sub)\b</string>
 			<key>name</key>
 			<string>keyword.control.vbs</string>
 		</dict>
@@ -145,19 +145,19 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?i:\b(Call|Class|Const|Dim|Redim|Function|Sub|Property|End Property|End sub|End Function|Set|Let|Get|New|Randomize|Option Explicit|On Error Resume Next|On Error GoTo)\b)</string>
+			<string>(?i)\b(Call|Class|Const|Dim|Redim|Function|Sub|Property|End Property|End sub|End Function|Set|Let|Get|New|Randomize|Option Explicit|On Error Resume Next|On Error GoTo)\b</string>
 			<key>name</key>
 			<string>storage.type.vbs</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?i:\b(Private|Public|Default)\b)</string>
+			<string>(?i)\b(Private|Public|Default)\b</string>
 			<key>name</key>
 			<string>storage.modifier.vbs</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?i:\b(Empty|False|Nothing|Null|True)\b)</string>
+			<string>(?i)\b(Empty|False|Nothing|Null|True)\b</string>
 			<key>name</key>
 			<string>constant.language.vbs</string>
 		</dict>
@@ -216,19 +216,19 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(?i:Class_(Initialize|Terminate))\b</string>
+			<string>(?i)\bClass_(Initialize|Terminate)\b</string>
 			<key>name</key>
 			<string>support.function.event.vbs</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?i:\b(Lock|Unlock|SetAbort|SetComplete|BianryRead|AddHeader|AppendToLog|BinaryWrite|Clear|End|Flush|Redirect|Write|CreateObject|HTMLEncode|MapPath|URLEncode|Abandon)\b)</string>
+			<string>(?i)\b(Lock|Unlock|SetAbort|SetComplete|BianryRead|AddHeader|AppendToLog|BinaryWrite|Clear|End|Flush|Redirect|Write|CreateObject|HTMLEncode|MapPath|URLEncode|Abandon)\b</string>
 			<key>name</key>
 			<string>support.function.vbs</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?i:\b(Array|Add|Asc|Atn|CBool|CByte|CCur|CDate|CDbl|Chr|CInt|CLng|Conversions|Cos|CreateObject|CSng|CStr|Date|DateAdd|DateDiff|DatePart|DateSerial|DateValue|Day|Derived|Math|Escape|Eval|Exists|Exp|Filter|FormatCurrency|FormatDateTime|FormatNumber|FormatPercent|GetLocale|GetObject|GetRef|Hex|Hour|InputBox|InStr|InStrRev|Int|Fix|IsArray|IsDate|IsEmpty|IsNull|IsNumeric|IsObject|Item|Items|Join|Keys|LBound|LCase|Left|Len|LoadPicture|Log|LTrim|RTrim|Trim|Maths|Mid|Minute|Month|MonthName|MsgBox|Now|Oct|Remove|RemoveAll|Replace|RGB|Right|Rnd|Round|ScriptEngine|ScriptEngineBuildVersion|ScriptEngineMajorVersion|ScriptEngineMinorVersion|Second|SetLocale|Sgn|Sin|Space|Split|Sqr|StrComp|String|StrReverse|Tan|Time|Timer|TimeSerial|TimeValue|TypeName|UBound|UCase|Unescape|VarType|Weekday|WeekdayName|Year)\b)</string>
+			<string>(?i)\b(Array|Add|Asc|Atn|CBool|CByte|CCur|CDate|CDbl|Chr|CInt|CLng|Conversions|Cos|CreateObject|CSng|CStr|Date|DateAdd|DateDiff|DatePart|DateSerial|DateValue|Day|Derived|Math|Escape|Eval|Exists|Exp|Filter|FormatCurrency|FormatDateTime|FormatNumber|FormatPercent|GetLocale|GetObject|GetRef|Hex|Hour|InputBox|InStr|InStrRev|Int|Fix|IsArray|IsDate|IsEmpty|IsNull|IsNumeric|IsObject|Item|Items|Join|Keys|LBound|LCase|Left|Len|LoadPicture|Log|LTrim|RTrim|Trim|Maths|Mid|Minute|Month|MonthName|MsgBox|Now|Oct|Remove|RemoveAll|Replace|RGB|Right|Rnd|Round|ScriptEngine|ScriptEngineBuildVersion|ScriptEngineMajorVersion|ScriptEngineMinorVersion|Second|SetLocale|Sgn|Sin|Space|Split|Sqr|StrComp|String|StrReverse|Tan|Time|Timer|TimeSerial|TimeValue|TypeName|UBound|UCase|Unescape|VarType|Weekday|WeekdayName|Year)\b</string>
 			<key>name</key>
 			<string>support.function.vbs</string>
 		</dict>
@@ -240,7 +240,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?i:\b(vb(true|false|cr|crlf|formfeed|lf|newline|nullchar|nullstring|tab|verticaltab|binarycompare|textcompare|sunday|monday|tuesday|wednesday|thursday|friday|saturday|usesystemdayofweek|firstjan1|firstfourdays|firstfullweek|generaldate|longdate|shortdate|longtime|shorttime|objecterror|Empty|Null|Integer|Long|Single|Double|Currency|Date|String|Object|Error|Boolean|Variant|DataObject|Decimal|Byte|Array))\b)</string>
+			<string>(?i)\bvb(true|false|cr|crlf|formfeed|lf|newline|nullchar|nullstring|tab|verticaltab|binarycompare|textcompare|sunday|monday|tuesday|wednesday|thursday|friday|saturday|usesystemdayofweek|firstjan1|firstfourdays|firstfullweek|generaldate|longdate|shortdate|longtime|shorttime|objecterror|Empty|Null|Integer|Long|Single|Double|Currency|Date|String|Object|Error|Boolean|Variant|DataObject|Decimal|Byte|Array)\b</string>
 			<key>name</key>
 			<string>support.type.vbs</string>
 		</dict>
