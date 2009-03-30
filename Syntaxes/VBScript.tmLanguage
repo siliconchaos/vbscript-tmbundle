@@ -210,7 +210,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?i:\b(TotalBytes|Buffer|CacheControl|Charset|ContentType|Expires|ExpiresAbsolute|IsClientConnected|PICS|Status|ScriptTimeout|CodePage|LCID|SessionID|Timeout)\b)</string>
+			<string>(?i)\b(TotalBytes|Buffer|CacheControl|Charset|ContentType|Expires|ExpiresAbsolute|IsClientConnected|PICS|Status|ScriptTimeout|CodePage|LCID|SessionID|Timeout)\b</string>
 			<key>name</key>
 			<string>support.constant.vbs</string>
 		</dict>
