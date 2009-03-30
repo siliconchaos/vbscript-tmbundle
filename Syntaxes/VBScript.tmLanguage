@@ -51,7 +51,9 @@
 			<string>meta.function.vbs</string>
 		</dict>
 		<dict>
-			<key>captures</key>
+			<key>begin</key>
+			<string>(?i:^\s*(class)\s*([a-zA-Z_]\w*)\s*\n?)</string>
+			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
 				<dict>
@@ -64,10 +66,25 @@
 					<string>entity.name.type.vbs</string>
 				</dict>
 			</dict>
-			<key>match</key>
-			<string>(?i:^\s*(class)\s*([a-zA-Z_]\w*)\s*\n?)</string>
-			<key>name</key>
+			<key>contentName</key>
 			<string>meta.class.vbs</string>
+			<key>end</key>
+			<string>(?i:^\s*end\s+class)</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>storage.type.class.vbs</string>
+				</dict>
+			</dict>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>$self</string>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>captures</key>
